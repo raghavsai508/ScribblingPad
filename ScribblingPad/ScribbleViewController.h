@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ScribbleViewController.h
 //  ScribblingPad
 //
 //  Created by Raghav Sai Cheedalla on 7/18/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ScribbleViewController : UIViewController
 
 
 @end

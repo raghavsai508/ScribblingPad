@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		676E68621B5AC8F300E79075 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 676E68611B5AC8F300E79075 /* main.m */; };
 		676E68651B5AC8F300E79075 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 676E68641B5AC8F300E79075 /* AppDelegate.m */; };
-		676E68681B5AC8F300E79075 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 676E68671B5AC8F300E79075 /* ViewController.m */; };
+		676E68681B5AC8F300E79075 /* ScribbleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 676E68671B5AC8F300E79075 /* ScribbleViewController.m */; };
 		676E686B1B5AC8F300E79075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 676E68691B5AC8F300E79075 /* Main.storyboard */; };
 		676E686D1B5AC8F300E79075 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 676E686C1B5AC8F300E79075 /* Images.xcassets */; };
 		676E68701B5AC8F300E79075 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 676E686E1B5AC8F300E79075 /* LaunchScreen.xib */; };
 		676E687C1B5AC8F300E79075 /* ScribblingPadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 676E687B1B5AC8F300E79075 /* ScribblingPadTests.m */; };
+		676E68881B5ACA0E00E79075 /* ScribbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 676E68871B5ACA0E00E79075 /* ScribbleView.m */; };
+		676E688C1B5B741300E79075 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 676E688B1B5B741300E79075 /* image1.jpg */; };
+		676E688E1B5C0F3500E79075 /* white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 676E688D1B5C0F3500E79075 /* white.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +35,18 @@
 		676E68611B5AC8F300E79075 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		676E68631B5AC8F300E79075 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		676E68641B5AC8F300E79075 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		676E68661B5AC8F300E79075 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		676E68671B5AC8F300E79075 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		676E68661B5AC8F300E79075 /* ScribbleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleViewController.h; sourceTree = "<group>"; };
+		676E68671B5AC8F300E79075 /* ScribbleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleViewController.m; sourceTree = "<group>"; };
 		676E686A1B5AC8F300E79075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		676E686C1B5AC8F300E79075 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		676E686F1B5AC8F300E79075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		676E68751B5AC8F300E79075 /* ScribblingPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScribblingPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		676E687A1B5AC8F300E79075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		676E687B1B5AC8F300E79075 /* ScribblingPadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribblingPadTests.m; sourceTree = "<group>"; };
+		676E68861B5ACA0E00E79075 /* ScribbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScribbleView.h; sourceTree = "<group>"; };
+		676E68871B5ACA0E00E79075 /* ScribbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScribbleView.m; sourceTree = "<group>"; };
+		676E688B1B5B741300E79075 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		676E688D1B5C0F3500E79075 /* white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +88,13 @@
 		676E685E1B5AC8F300E79075 /* ScribblingPad */ = {
 			isa = PBXGroup;
 			children = (
+				676E688B1B5B741300E79075 /* image1.jpg */,
+				676E688D1B5C0F3500E79075 /* white.jpg */,
+				676E68851B5AC9EE00E79075 /* ScribbleView */,
 				676E68631B5AC8F300E79075 /* AppDelegate.h */,
 				676E68641B5AC8F300E79075 /* AppDelegate.m */,
-				676E68661B5AC8F300E79075 /* ViewController.h */,
-				676E68671B5AC8F300E79075 /* ViewController.m */,
+				676E68661B5AC8F300E79075 /* ScribbleViewController.h */,
+				676E68671B5AC8F300E79075 /* ScribbleViewController.m */,
 				676E68691B5AC8F300E79075 /* Main.storyboard */,
 				676E686C1B5AC8F300E79075 /* Images.xcassets */,
 				676E686E1B5AC8F300E79075 /* LaunchScreen.xib */,
@@ -117,6 +127,15 @@
 				676E687A1B5AC8F300E79075 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		676E68851B5AC9EE00E79075 /* ScribbleView */ = {
+			isa = PBXGroup;
+			children = (
+				676E68861B5ACA0E00E79075 /* ScribbleView.h */,
+				676E68871B5ACA0E00E79075 /* ScribbleView.m */,
+			);
+			path = ScribbleView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +218,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				676E688E1B5C0F3500E79075 /* white.jpg in Resources */,
 				676E686B1B5AC8F300E79075 /* Main.storyboard in Resources */,
+				676E688C1B5B741300E79075 /* image1.jpg in Resources */,
 				676E68701B5AC8F300E79075 /* LaunchScreen.xib in Resources */,
 				676E686D1B5AC8F300E79075 /* Images.xcassets in Resources */,
 			);
@@ -219,8 +240,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				676E68681B5AC8F300E79075 /* ViewController.m in Sources */,
+				676E68681B5AC8F300E79075 /* ScribbleViewController.m in Sources */,
 				676E68651B5AC8F300E79075 /* AppDelegate.m in Sources */,
+				676E68881B5ACA0E00E79075 /* ScribbleView.m in Sources */,
 				676E68621B5AC8F300E79075 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScribblingPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScribblingPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
